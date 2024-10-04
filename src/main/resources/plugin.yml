@@ -1,0 +1,6 @@
+name: DominionPluginExample
+version: '${version}'
+main: cn.lunadeer.dominionpluginexample.DominionPluginExample
+api-version: '1.21'
+depend: [ Dominion ]
+folia-supported: true
