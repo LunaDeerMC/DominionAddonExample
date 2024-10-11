@@ -23,7 +23,7 @@ repositories {
 
 dependencies {
     compileOnly "org.spigotmc:spigot-api:1.21-R0.1-SNAPSHOT"
-    compileOnly "cn.lunadeer:DominionAPI:2.0-SNAPSHOT"
+    compileOnly "cn.lunadeer:DominionAPI:2.1-SNAPSHOT"
 }
 
 def targetJavaVersion = 21
