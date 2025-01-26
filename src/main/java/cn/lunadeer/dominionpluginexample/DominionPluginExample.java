@@ -1,6 +1,5 @@
 package cn.lunadeer.dominionpluginexample;
 
-import cn.lunadeer.dominion.api.Dominion;
 import cn.lunadeer.dominion.api.DominionAPI;
 import cn.lunadeer.dominion.api.dtos.DominionDTO;
 import org.bukkit.event.EventHandler;
@@ -14,7 +13,7 @@ public final class DominionPluginExample extends JavaPlugin implements Listener 
     public void onEnable() {
         // 1. Get the DominionAPI instance
         try {
-            dominionAPI = Dominion.getInstance();
+            dominionAPI = DominionAPI.getInstance();
             this.getLogger().info("Got Dominion instance");
         } catch (ClassNotFoundException | NoSuchFieldException | IllegalAccessException e) {
             this.getLogger().severe("Failed to get Dominion instance %s".formatted(e.getMessage()));
