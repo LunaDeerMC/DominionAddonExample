@@ -8,22 +8,14 @@ version = '1.0'
 repositories {
     mavenCentral()
     maven {
-        name = "spigotmc-repo"
-        url = "https://hub.spigotmc.org/nexus/content/repositories/snapshots/"
-    }
-    maven {
-        name = "sonatype"
-        url = "https://oss.sonatype.org/content/groups/public/"
-    }
-    maven {
-        name = "luna-deer"
-        url = "https://ssl.lunadeer.cn:14454/repository/maven-snapshots/"
+        name = 'papermc'
+        url = 'https://repo.papermc.io/repository/maven-public/'
     }
 }
 
 dependencies {
-    compileOnly "org.spigotmc:spigot-api:1.21-R0.1-SNAPSHOT"
-    compileOnly "cn.lunadeer:DominionAPI:2.1-SNAPSHOT"
+    compileOnly 'io.papermc.paper:paper-api:1.21.5-R0.1-SNAPSHOT'
+    compileOnly "cn.lunadeer:DominionAPI:4.3"
 }
 
 def targetJavaVersion = 21
